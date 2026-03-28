@@ -83,27 +83,6 @@ Digitivity/
 ```
 
 
-## ▶️ How to Run
-
-1. Navigate to the project folder:
-
-```bash
-cd Digitivity
-```
-
-2. Activate virtual environment:
-
-```bash
-source venv/bin/activate
-```
-
-3. Run the program:
-
-```bash
-python assesment.py
-```
-
-
 ## 📤 Output
 
 ### 1. delivery_dataset.csv
