@@ -1,8 +1,7 @@
-# 📦 Delivery Optimization System
+ Delivery Optimization System
 
-This project was developed as part of an assessment task.
 
-## 📌 Overview
+ 📌 Overview
 
 This project focuses on solving a **logistics delivery optimization problem**.
 The goal is to assign delivery locations to multiple agents such that:
@@ -12,27 +11,26 @@ The goal is to assign delivery locations to multiple agents such that:
 * Total travel distance is **optimized efficiently**
 
 
-## 📊 Dataset
+📊 Dataset
 
 The dataset is derived from the **Olist Brazilian E-Commerce dataset (Kaggle)**.
 Relevant features were extracted and transformed to fit the problem.
 
-### Data Preparation:
+ Data Preparation:
 
 * `customer_id` → used as **Location_ID**
 * **Distance** → randomly generated (5–50 units) to simulate delivery distance
 * **Priority** → randomly assigned (`High`, `Medium`, `Low`) to simulate real-world urgency independent of distance
 
-### Final Dataset Columns:
+Final Dataset Columns:
 
 * Location_ID
 * Distance
 * Priority
 
+🧠 Approach
 
-## 🧠 Approach
-
-### 1. Sorting
+ 1. Sorting
 
 Deliveries are sorted based on:
 
@@ -45,24 +43,24 @@ This ensures:
 * Shorter routes are prioritized within each priority level
 
 
-### 2. Algorithm Used – Greedy Approach
+ 2. Algorithm Used – Greedy Approach
 
 A **greedy algorithm** is used to assign deliveries efficiently.
 
-#### Logic:
+ Logic:
 
 * Initialize 3 delivery agents
 * Iterate through sorted deliveries
 * Assign each delivery to the agent with the **least total distance**
 
-#### Why Greedy?
+Why Greedy?
 
 * Simple and efficient
 * Produces **near-optimal load balancing**
 * Suitable for real-time logistics systems
 
 
-### 3. Load Balancing
+ 3. Load Balancing
 
 The system ensures:
 
@@ -71,7 +69,7 @@ The system ensures:
 * Efficient distribution of tasks
 
 
-## 📁 Project Structure
+📁 Project Structure
 
 ```
 Digitivity/
@@ -83,9 +81,9 @@ Digitivity/
 ```
 
 
-## 📤 Output
+ 📤 Output
 
-### 1. delivery_dataset.csv
+ 1. delivery_dataset.csv
 
 Processed dataset containing:
 
@@ -94,7 +92,7 @@ Processed dataset containing:
 * Priority
 
 
-### 2. delivery_plan.csv
+ 2. delivery_plan.csv
 
 Final optimized delivery assignment:
 
@@ -110,7 +108,7 @@ Each row represents:
 * Total distance handled by that agent
 
 
-## ✅ Results
+ ✅ Results
 
 * Deliveries are distributed across 3 agents
 * Total distance per agent is **balanced**
@@ -119,7 +117,7 @@ Each row represents:
 
 
 
-## 🚀 Conclusion
+🚀 Conclusion
 
 This project demonstrates how a **greedy algorithm** can effectively solve a delivery optimization problem by:
 
@@ -129,7 +127,7 @@ This project demonstrates how a **greedy algorithm** can effectively solve a del
 
 
 
-## 🔧 Future Improvements
+🔧 Future Improvements
 
 * Use real geographic coordinates to calculate actual distances
 * Implement route optimization (e.g., shortest path algorithms)
@@ -137,6 +135,6 @@ This project demonstrates how a **greedy algorithm** can effectively solve a del
 * Add visualization (maps or dashboards)
 
 
-## 📎 Note
+📎 Note
 
 The dataset is inspired by Kaggle (Olist dataset) and has been **preprocessed and enhanced** with additional features (distance and priority) to simulate a real-world delivery optimization scenario.
